@@ -1,12 +1,19 @@
 Practical Machine Learning - Prediction Assignment Writeup
+
 For this assignment I analyzed the provided data to determine what activity an individual perform. To do this I made use of caret and randomForest, this allowed me to generate correct answers for each of the 20 test data cases provided in this assignment. I made use of a seed value for consistent results.
 
 library(Hmisc)
+
 library(caret)
+
 library(randomForest)
+
 library(foreach)
+
 library(doParallel)
+
 set.seed(2048)
+
 options(warn=-1)
 First, I loaded the data both from the provided training and test data provided by COURSERA. Some values contained a "#DIV/0!" that I replaced with an NA value.
 
